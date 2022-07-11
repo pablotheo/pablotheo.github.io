@@ -18,7 +18,7 @@ p, h1, h2, li {
     color: white;
 }
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 header {
@@ -39,8 +39,8 @@ nav ul {
 }
 nav li {
     display: inline-block;
-    margin-left: 70px;
-    padding-top: 10px;
+    margin-left: 40px;
+    padding-top: 30px;
 }
 nav ul li a {
     color: white;
