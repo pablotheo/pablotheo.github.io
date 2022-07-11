@@ -24,3 +24,6 @@ p, h1, h2, li {
 header {
     background: black;
 }
+nav {
+    float: right;
+}
