@@ -17,3 +17,10 @@ a:hover {
 p, h1, h2, li {
     color: white;
 }
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+header {
+    background: black;
+}
