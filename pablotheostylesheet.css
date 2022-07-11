@@ -25,6 +25,7 @@
         }
         header {
             background: #3a4046;
+            border-bottom: 1px solid black;
         }
         header::after {
             content: '';
