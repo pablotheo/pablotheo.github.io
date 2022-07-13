@@ -40,7 +40,7 @@
 
         /* all text within "SPAN" will default to this blue oclor */
         .theonavbar {
-            width: 100%;
+            width: 90%;
             display: flex;
             justify-content: end;
         }
@@ -122,7 +122,7 @@
             margin-right: auto;
             height: auto;
             max-width: 100%;
-            width: 1024px;
+            width: 1200px;
         }
 
         /* defines page content which is used to store ALL div boxes and text after the navbar */
