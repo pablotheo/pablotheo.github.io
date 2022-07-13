@@ -121,8 +121,7 @@
             margin-left: auto;
             margin-right: auto;
             height: auto;
-            max-width: 100%;
-            width: 1200px;
+            max-width: 80%;
         }
 
         /* defines page content which is used to store ALL div boxes and text after the navbar */
