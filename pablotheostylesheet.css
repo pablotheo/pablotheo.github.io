@@ -1,64 +1,95 @@
+    <style>
+        /* * {
+            border: 1px solid red;
+        } */
+        /* uncomment the above to see all the borders */
+
         body {
             background-color: #3a4046;
-        }
-        html {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
             padding: 1em;
         }
+
+        /* defines background color */
+        html {
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* defines font */
         a {
-        text-decoration: none;
+            text-decoration: none;
             color: #35aeb2;
             font-weight: 500;
         }
+
+        /* changes color of hyperlinks */
         a:hover {
             text-decoration: underline;
         }
-        p, h1, h2, li {
+
+        /* underlines hyperlinks */
+        p,
+        h1,
+        h2,
+        li {
             color: white;
         }
+
+        /* all text will default to white */
         span {
             color: #35aeb2;
         }
-        .container {
-            width: 95%;
-            margin: 0 auto;
+
+        /* all text within "SPAN" will default to this blue oclor */
+        .theonavbar {
+            width: 100%;
+            display: flex;
+            justify-content: end;
         }
+
+        /* defines box area for navbar */
         header {
             background: #3a4046;
         }
+
+        /* defines background for header/navbar */
         header::after {
             content: '';
             display: table;
             clear: both;
         }
-        nav {
-            float: right;
-        }
+
+        /* makes sure that navbar does not disappear */
         nav ul {
             margin: 0;
             padding: 0;
             list-style: none;
         }
+
         nav li {
             display: inline-block;
             margin-left: 20px;
             padding-top: 10px;
         }
+
+        /* makes navbar list a block */
         nav ul li a {
             color: white;
             text-decoration: none;
             text-transform: uppercase;
             font-size: 20px;
         }
-        .pablotheointro {
-            width: 90%;
+
+        /* sets colors for navbar links and makes them uppercase */
+        .theopageintro {
+            width: auto;
             padding: 25px;
-            margin: 0 auto;
             font-size: 25px;
             font-weight: bolder;
             color: white;
         }
-        .button {
+
+        /* theopageintro is used as the title class for all webpages */
+        .linktreebutton {
             display: inline-block;
             padding: 10px 50px;
             font-size: 30px;
@@ -71,3 +102,28 @@
             height: 40px;
             width: 200px;
         }
+
+        /* defines round buttons that are used for contact links */
+        .theocontactimage {
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+        }
+
+        /* defines box that is used to store contact images in */
+        img {
+            max-width: 100%;
+            float: center;
+        }
+
+        /* makes it so that images will automatically fill the container that they are in i.e. theocontact iamge */
+        .pagecontent {
+            margin-top: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            height: auto;
+            width: 100%;
+            max-width: 1000px;
+        }
+
+        /* defines page content which is used to store ALL div boxes and text after the navbar */
