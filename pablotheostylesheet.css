@@ -1,127 +1,176 @@
-        /* * {
-            border: 1px solid red;
-        } */
-        /* uncomment the above to see all the borders */
+		/* uncomment below to see all the borders */
+		/* * {
+			border: 1px solid red;
+		} */
 
-        body {
-            background-color: #3a4046;
-            padding: 1em;
-        }
+		/* defines background color */
+		body {
+			background-color: #FBFBF8;
+			padding: 0px;
+			border: 0px;
+		}
 
-        /* defines background color */
-        html {
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
+		/* defines the font */
+		html {
+			font-family: 'Gloria Hallelujah', cursive;
+		}
 
-        /* defines font */
-        a {
-            text-decoration: none;
-            color: #35aeb2;
-            font-weight: 500;
-        }
+		/* defines the font size for computers */
+		@media screen and (min-width: 601px) {
+			div {
+				font-size: 25px;
+			}
+		}
 
-        /* changes color of hyperlinks */
-        a:hover {
-            text-decoration: underline;
-        }
+		/* defines the font size for phones */
+		@media screen and (max-width: 600px) {
+			div {
+				font-size: 13px;
+			}
 
-        /* underlines hyperlinks */
-        p,
-        h1,
-        h2,
-        li {
-            color: white;
-        }
+			div.pagecontent-title,
+			div.pagecontent-subtitle {
+				margin-left: 2%;
+				margin-right: 2%;
+			}
 
-        /* all text will default to white */
-        span {
-            color: #35aeb2;
-        }
+		}
 
-        /* all text within "SPAN" will default to this blue oclor */
-        .theonavbar {
-            width: 90%;
-            display: flex;
-            justify-content: end;
-        }
+		/* changes hyperlinks */
+		a {
+			text-decoration: none;
+			font-weight: 500;
+		}
 
-        /* defines box area for navbar */
-        header {
-            background: #3a4046;
-        }
+		/* underlines hyperlinks */
+		a:hover {
+			text-decoration: underline;
+		}
 
-        /* defines background for header/navbar */
-        header::after {
-            content: '';
-            display: table;
-            clear: both;
-        }
+		/* all text will default to white */
+		p,
+		h1,
+		h2,
+		h3 {
+			padding: 0;
+			margin: 0;
+			border: 0;
+			color: white;
+		}
 
-        /* makes sure that navbar does not disappear */
-        nav ul {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
+		/* defines box area for navbar */
+		.theonavbar {
+			width: 90%;
+			display: flex;
+			justify-content: end;
+		}
 
-        nav li {
-            display: inline-block;
-            margin-left: 20px;
-            padding-top: 10px;
-        }
+		/* defines border for header/navbar */
+		header {
+			border-bottom: 3px solid #6E6658;
+		}
 
-        /* makes navbar list a block */
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 20px;
-        }
+		/* makes sure that navbar does not disappear */
+		header::after {
+			content: '';
+			display: table;
+			clear: both;
+		}
 
-        /* sets colors for navbar links and makes them uppercase */
-        .theopageintro {
-            width: auto;
-            padding: 25px;
-            font-size: 25px;
-            font-weight: bolder;
-            color: white;
-        }
+		nav ul {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			list-style: none;
+		}
 
-        /* theopageintro is used as the title class for all webpages */
-        .linktreebutton {
-            display: inline-block;
-            padding: 10px 50px;
-            font-size: 30px;
-            text-align: center;
-            text-decoration: none;
-            color: #35aeb2;
-            background-color: #4b4d51;
-            border-radius: 40px;
-            outline: none;
-            height: 40px;
-            width: 200px;
-        }
+		/* makes navbar list a block */
+		nav li {
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 10px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 
-        /* defines round buttons that are used for contact links */
-        .theocontactimage {
-            margin-left: auto;
-            margin-right: auto;
-            width: 300px;
-        }
+		/* sets colors for navbar links and makes them uppercase */
+		nav ul li a {
+			color: #254E58;
+			text-decoration: none;
+			text-transform: none;
+		}
 
-        /* defines box that is used to store contact images in */
-        img {
-            max-width: 100%;
-            float: center;
-        }
+		/* defines round buttons that are used for contact links */
+		/* .linktreebutton {
+			display: inline-block;
+			padding: 10px 50px;
+			font-size: 30px;
+			text-align: center;
+			text-decoration: none;
+			color: #35aeb2;
+			background-color: #4b4d51;
+			border-radius: 40px;
+			outline: none;
+			height: 40px;
+			width: 200px;
+		} */
 
-        /* makes it so that images will automatically fill the container that they are in i.e. theocontact iamge */
-        .pagecontent {
-            margin-top: 50px;
-            margin-left: auto;
-            margin-right: auto;
-            height: auto;
-            max-width: 80%;
-        }
+		/* defines box that is used to store contact images in */
+		.contactimage {
+			margin-top: 50px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 300px;
+		}
 
-        /* defines page content which is used to store ALL div boxes and text after the navbar */
+		/* makes it so that images will automatically fill the container that they are in i.e. theocontact iamge */
+		img {
+			max-width: 100%;
+			float: center;
+		}
+
+		/* defines page content which is used to store ALL div boxes and text after the navbar */
+		.pagecontent {
+			margin-left: auto;
+			margin-right: auto;
+			border: 0;
+			padding: 0;
+			height: auto;
+			width: 100%;
+		}
+
+		/* theopageintro is used as the intro class for all webpages */
+		.pagecontent-title,
+		.pagecontent-subtitle {
+			display: block;
+			margin-left: 15%;
+			margin-right: 15%;
+			padding-left: 1%
+		}
+
+		.pagecontent-title {
+			margin-top: 5px;
+		}
+
+		.pagecontent-title h1 {
+			color: #112D32;
+		}
+
+		.pagecontent-title h2 {
+			color: #254E58;
+		}
+
+		.pagecontent-subtitle {
+			margin-top: 5px;
+			background-color: #6E6658;
+		}
+
+		.pagecontent-subtitle h3 {
+			color: #254E58;
+		}
+
+		.sticky {
+			position: fixed;
+			top: 0;
+			width: 100%;
+		}
