@@ -16,7 +16,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 	<!-- google font end -->
-    <link rel="stylesheet" href="pablotheostylesheet.css">
+	<link rel="stylesheet" href="pablotheostylesheet.css">
 
 </head>
 
@@ -59,7 +59,20 @@
 
 
 
+	<script>
+		window.onscroll = function () { myFunction() };
 
+		var header = document.getElementById("myHeader");
+		var sticky = header.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset > sticky) {
+				header.classList.add("sticky");
+			} else {
+				header.classList.remove("sticky");
+			}
+		}
+	</script>
 
 
 
