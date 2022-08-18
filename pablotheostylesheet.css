@@ -168,7 +168,7 @@ nav ul li a {
 	background-color: #6E6658;
 }
 
-.my-section-1 {
+.my-section-1, .my-section-2 {
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 100px;
@@ -177,10 +177,5 @@ nav ul li a {
 }
 
 .my-section-2 {
-	width: 100%;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	align-content: center;
-	margin: 0;
 	background-color: #6E6658;
 }
