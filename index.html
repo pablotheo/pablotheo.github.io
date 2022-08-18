@@ -10,7 +10,6 @@
 	<meta name="author" content="Pablo Theotokos Meraz">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-	<!-- <link rel="stylesheet" href="pablotheostylesheet.css"> -->
 	<!-- google font begin -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,65 +19,137 @@
 
 </head>
 
-<BODY>
-
-	<header>
-		<div class="theonavbar">
+<BODY id="home">
+	<!-- Header/Navbar Begin -->
+	<header id="myHeader">
+		<div class="navbar-top">
 			<nav>
 				<ul>
-					<li><a href="#" style="color:#112D32">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">My Services</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#home" style="color:#112D32">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">My Services</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
+	<!-- Header/Navbar END -->
 
 
-	<div class="pagecontent">
-		<!-- pagecontent: the main box that i want all the body, minus the navbar to be in -->
-
+	<div class="my-section-1">
+		<!-- LANDING PAGE INTRO BEGIN: contactimage, pagecontent-title, pagecontent-subtitle -->
 		<div class="contactimage">
 			<img src="https://raw.githubusercontent.com/pablotheo/pablotheo.github.io/main/media/profilepic01.jpg"
 				style="border-radius: 50%" alt="@pabstheo" />
 		</div>
-
 		<div class="pagecontent-title">
-			<!-- theopageintro: this class will be used as the opening title for each webpage -->
 			<h2>Hello World...</h2>
 			<h1>I'm Pablo Theo Meraz</h1>
 		</div>
 		<div class="pagecontent-subtitle">
-			<!-- theopageintro: this class will be used as the opening title for each webpage -->
 			<h3>Web Developer based in Santa Cruz, CA</h3>
 		</div>
-
+		<!-- LANDING PAGE INTRO END: contactimage, pagecontent-title, pagecontent-subtitle -->
 	</div>
-	<!-- pagecontent end -->
+
+
+	<!-- ABOUT SECTION BEGIN: pagecontent-about, pagecontent-title, pagecontent-subtitle -->
+	<div class="my-section-2" id="about">
+		<div class="pagecontent-title">
+			<h2 style="color: #FBFBF8">
+				<center>
+					About me:
+				</center>
+			</h2>
+			<p>
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+			</p>
+		</div>
+	</div>
+	<!-- ABOUT SECTION END: pagecontent-about, pagecontent-title, pagecontent-subtitle -->
 
 
 
-	<script>
-		window.onscroll = function () { myFunction() };
+	<!-- SERVICES SECTION BEGIN: pagecontent-services, pagecontent-title, pagecontent-subtitle -->
+	<div class="my-section-1" id="services">
+		<div class="pagecontent-title">
+			<h2>
+				<center>My Services:</center>
+			</h2>
 
-		var header = document.getElementById("myHeader");
-		var sticky = header.offsetTop;
+			<p>
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+			</p>
+		</div>
+	</div>
+	<!-- SERVICES SECTION END: pagecontent-services, pagecontent-title, pagecontent-subtitle -->
 
-		function myFunction() {
-			if (window.pageYOffset > sticky) {
-				header.classList.add("sticky");
-			} else {
-				header.classList.remove("sticky");
-			}
-		}
-	</script>
 
+	<!-- CONTACT SECTION BEGIN: pagecontent-contact, pagecontent-title, pagecontent-subtitle -->
+	<div class="my-section-2" id="contact">
+		<div class="pagecontent-title">
+			<h2 style="color: #FBFBF8">
+				<center>Contact me:</center>
+			</h2>
+			<p>
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+				Hello there, I will add more text to this later on...
+			</p>
+		</div>
+	</div>
+	<!-- CONTACT SECTION END: pagecontent-contact, pagecontent-title, pagecontent-subtitle -->
 
+	<!-- FOOTER BEGIN -->
+	<footer>
+		<div class="navbar-bottom">
+			<nav>
+				<ul>
+					<li>
+						<div style="height: 64px; width: 64px; border: 1px solid red;"></div>
+					</li>
+					<li>
+						<div style="height: 64px; width: 64px; border: 1px solid red;"></div>
+					</li>
+					<li>
+						<div style="height: 64px; width: 64px; border: 1px solid red;"></div>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
 
-
-
-
-	<!-- I wrote this webpage on VSCode.Dev. The domain was purchased from Google, and I host the files via GitHub Pages.-->
+	<!-- I wrote this webpage on VSCode.Dev. The domain was purchased from Google, and I host the files via a GitHub repository. Editing is done via a cloned version on VS Code and changes are pushed directly to GitHub-->
 
 </html>

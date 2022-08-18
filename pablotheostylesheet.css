@@ -1,182 +1,186 @@
-		/* uncomment below to see all the borders */
-		/* * {
-			border: 1px solid red;
-		} */
+/* uncomment below to see all the borders */
+/* * {
+	border: 1px solid red;
+} */
 
-		/* defines background color */
-		body {
-			background-color: #FBFBF8;
-			padding: 0px;
-			border: 0px;
-		}
+/* defines background color */
+body {
+	background-color: #FBFBF8;
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
 
-		/* defines the font */
-		html {
-			font-family: 'Gloria Hallelujah', cursive;
-		}
+/* defines the font */
+html {
+	font-family: 'Gloria Hallelujah', cursive;
+}
 
-		/* defines the font size for computers */
-		@media screen and (min-width: 601px) {
-			div {
-				font-size: 25px;
-			}
-		}
+/* defines the font size for computers */
+@media screen and (min-width: 601px) {
+	div {
+		font-size: 25px;
+	}
+}
 
-		/* defines the font size for phones */
-		@media screen and (max-width: 600px) {
-			div {
-				font-size: 13px;
-			}
+/* defines the font size for phones */
+@media screen and (max-width: 600px) {
+	div {
+		font-size: 13px;
+	}
 
-			div.pagecontent-title,
-			div.pagecontent-subtitle {
-				margin-left: 2%;
-				margin-right: 2%;
-			}
+	div.pagecontent-title,
+	div.pagecontent-subtitle {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
 
-		}
+}
 
-		/* changes hyperlinks */
-		a {
-			text-decoration: none;
-			font-weight: 500;
-		}
+/* changes hyperlinks */
+a {
+	text-decoration: none;
+	font-weight: 500;
+}
 
-		/* underlines hyperlinks */
-		a:hover {
-			text-decoration: underline;
-		}
+/* underlines hyperlinks */
+a:hover {
+	text-decoration: underline;
+}
 
-		/* all text will default to white */
-		p,
-		h1,
-		h2,
-		h3 {
-			padding: 0;
-			margin: 0;
-			border: 0;
-			color: white;
-		}
+/* all text will default to white */
+p,
+h1,
+h2,
+h3 {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 
-		/* defines box area for navbar */
-		.theonavbar {
-			width: 90%;
-			display: flex;
-			justify-content: end;
-		}
+h1 {
+	color: #112D32;
+}
 
-		/* defines border for header/navbar */
-		header {
-			border-bottom: 3px solid #6E6658;
-		}
+h2 {
+	color: #254E58;
+}
 
-		/* makes sure that navbar does not disappear */
-		header::after {
-			content: '';
-			display: table;
-			clear: both;
-		}
+h3 {
+	color: #FBFBF8;
+}
 
-		nav ul {
-			margin: 0;
-			padding: 0;
-			border: 0;
-			list-style: none;
-		}
+/* defines box area for navbar at the top*/
+.navbar-top {
+	width: 90%;
+	display: flex;
+	justify-content: end;
+}
 
-		/* makes navbar list a block */
-		nav li {
-			display: inline-block;
-			margin-left: 10px;
-			margin-right: 10px;
-			padding-top: 10px;
-			padding-bottom: 10px;
-		}
+/* defines box area for navbar at the bottom*/
+.navbar-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
 
-		/* sets colors for navbar links and makes them uppercase */
-		nav ul li a {
-			color: #254E58;
-			text-decoration: none;
-			text-transform: none;
-		}
+/* defines border for header/navbar */
+header {
+	background-color: #FBFBF8;
+	/* border-bottom: 3px solid #6E6658; */
+	position: fixed;
+	width: 100%;
+}
 
-		/* defines round buttons that are used for contact links */
-		/* .linktreebutton {
-			display: inline-block;
-			padding: 10px 50px;
-			font-size: 30px;
-			text-align: center;
-			text-decoration: none;
-			color: #35aeb2;
-			background-color: #4b4d51;
-			border-radius: 40px;
-			outline: none;
-			height: 40px;
-			width: 200px;
-		} */
+/* makes sure that navbar does not disappear */
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
 
-		/* defines box that is used to store contact images in */
-		.contactimage {
-			margin-top: 50px;
-			margin-left: auto;
-			margin-right: auto;
-			width: 300px;
-		}
+nav ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
 
-		/* makes it so that images will automatically fill the container that they are in i.e. theocontact iamge */
-		img {
-			max-width: 100%;
-			float: center;
-		}
+/* makes navbar list a block */
+nav li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
-		/* defines page content which is used to store ALL div boxes and text after the navbar */
-		.pagecontent {
-			margin-left: auto;
-			margin-right: auto;
-			border: 0;
-			padding: 0;
-			height: auto;
-			width: 100%;
-		}
+/* sets colors for navbar links and makes them uppercase */
+nav ul li a {
+	color: #254E58;
+	text-decoration: none;
+	text-transform: none;
+}
 
-		/* theopageintro is used as the intro class for all webpages */
-		.pagecontent-title,
-		.pagecontent-subtitle {
-			display: block;
-			margin-left: 15%;
-			margin-right: 15%;
-			padding-left: 1%
-		}
+/* defines round buttons that are used for contact links */
+/* .linktreebutton {
+	display: inline-block;
+	padding: 10px 50px;
+	font-size: 30px;
+	text-align: center;
+	text-decoration: none;
+	color: #35aeb2;
+	background-color: #4b4d51;
+	border-radius: 40px;
+	outline: none;
+	height: 40px;
+	width: 200px;
+} */
 
-		.pagecontent-title {
-			margin-top: 5px;
-		}
+/* defines box that is used to store contact images in */
+.contactimage {
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+}
 
-		.pagecontent-title h1 {
-			color: #112D32;
-		}
+/* makes it so that images will automatically fill the container that they are in i.e. theocontact iamge */
+.contactimage img {
+	max-width: 100%;
+	float: center;
+}
 
-		.pagecontent-title h2 {
-			color: #254E58;
-		}
+/* theopageintro is used as the intro class for all webpages */
+.pagecontent-title,
+.pagecontent-subtitle {
+	display: block;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding-left: 1%
+}
 
-		.pagecontent-subtitle {
-			margin-top: 5px;
-			background-color: #6E6658;
-		}
+.pagecontent-title {
+	margin-top: 5px;
+}
 
-		.pagecontent-subtitle h3 {
-			color: #FBFBF8;
-		}
+.pagecontent-subtitle {
+	margin-top: 5px;
+	background-color: #6E6658;
+}
 
-		/* The sticky class is added to the header with JS when it reaches its scroll position */
-		.sticky {
-			position: fixed;
-			top: 0;
-			width: 100%;
-		}
+.my-section-1 {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	align-content: center;
+	margin: 0;
+}
 
-		/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-		.sticky+.pagecontent {
-			padding-top: 75px;
-		}
+.my-section-2 {
+	width: 100%;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	align-content: center;
+	margin: 0;
+	background-color: #6E6658;
+}
