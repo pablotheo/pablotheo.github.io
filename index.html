@@ -16,7 +16,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
 	<!-- google font end -->
 	<link rel="stylesheet" href="pablotheostylesheet.css">
-
+	<script>
+		window.onbeforeunload = () => {
+			for (const form of document.getElementsByTagName('form')) {
+				form.reset();
+			}
+		}
+	</script>
 </head>
 
 <BODY id="home">
