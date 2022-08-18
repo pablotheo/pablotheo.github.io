@@ -11,9 +11,10 @@ body {
 	margin: 0;
 }
 
-/* defines the font */
+/* defines the font and scroll behavior */
 html {
 	font-family: 'Gloria Hallelujah', cursive;
+	scroll-behavior: smooth;
 }
 
 /* defines the font size for computers */
