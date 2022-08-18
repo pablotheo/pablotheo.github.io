@@ -206,7 +206,7 @@ input[type=text], select, textarea {
 	background-color: navy;
   }
   
-  .container {
+  .formcontainer {
 	border-radius: 5px;
 	background-color: #FBFBF8;
 	padding: 20px;
