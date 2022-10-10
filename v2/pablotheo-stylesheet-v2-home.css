@@ -1,10 +1,11 @@
 /* uncomment below to see all the borders */
-/* * {
+* {
 	border: 1px solid red;
-} */
+}
 
 /* defines background color */
 body {
+	/* background-color: #FBFBF8; */
 	padding: 0;
 	border: 0;
 	margin: 0;
@@ -15,6 +16,10 @@ body {
 html {
 	font-family: 'Reem Kufi Ink', sans-serif;
 	scroll-behavior: smooth;
+	color:#254E58;
+}
+h1, h2 {
+	color: #FBFBF8;
 }
 
 /* defines the font size for computers */
@@ -36,11 +41,27 @@ a {
 /* underlines hyperlinks */
 a:hover {
 	text-decoration: underline;
+	font-style: bold;
 }
 
+.header {
+	padding:0;
+	border:0;
+	margin:0;
+	height: 35em;
+	background-image: url(../media/pablotheo-image-header-v2.jpeg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right bottom;
+}
 /* defines box area for navbar at the top*/
-.navbar-top {
-	width: 90%;
+.navbar {
+	margin-left:auto;
+	margin-right:auto;
+	border: auto;
+	width: 95%;
+	max-width: 100%;
 	display: flex;
 	justify-content: end;
 }
@@ -54,15 +75,15 @@ a:hover {
 }
 
 /* defines border for header/navbar */
-header {
-	background-color: #FBFBF8;
+/* header {
+	/* background-color: #FBFBF8; */
 	/* border-bottom: 3px solid #6E6658; */
-	position: fixed;
+	/* position: fixed;
 	width: 100%;
-}
+} */
 
 /* makes sure that navbar does not disappear */
-header::after {
+.header::after {
 	content: '';
 	display: table;
 	clear: both;
@@ -78,15 +99,23 @@ nav ul {
 /* makes navbar list a block */
 nav li {
 	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	margin: 12px;
 }
 
 /* sets colors for navbar links and makes them uppercase */
 nav ul li a {
+	line-height: normal;
 	color: #254E58;
 	text-decoration: none;
 	text-transform: none;
+	font-weight: bold;
+}
+.middle {
+	position:relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px #254E58;
 }
