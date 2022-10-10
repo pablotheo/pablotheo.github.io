@@ -1,0 +1,92 @@
+/* uncomment below to see all the borders */
+/* * {
+	border: 1px solid red;
+} */
+
+/* defines background color */
+body {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+/* defines the font and scroll behavior */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+html {
+	font-family: 'Reem Kufi Ink', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* defines the font size for computers */
+@media screen and (min-width: 601px) {
+
+}
+
+/* defines the font size for phones */
+@media screen and (max-width: 600px) {
+
+}
+
+/* changes hyperlinks */
+a {
+	text-decoration: none;
+	font-weight: 500;
+}
+
+/* underlines hyperlinks */
+a:hover {
+	text-decoration: underline;
+}
+
+/* defines box area for navbar at the top*/
+.navbar-top {
+	width: 90%;
+	display: flex;
+	justify-content: end;
+}
+
+/* defines box area for navbar at the bottom*/
+.navbar-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+}
+
+/* defines border for header/navbar */
+header {
+	background-color: #FBFBF8;
+	/* border-bottom: 3px solid #6E6658; */
+	position: fixed;
+	width: 100%;
+}
+
+/* makes sure that navbar does not disappear */
+header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+/* makes navbar list a block */
+nav li {
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+/* sets colors for navbar links and makes them uppercase */
+nav ul li a {
+	color: #254E58;
+	text-decoration: none;
+	text-transform: none;
+}
