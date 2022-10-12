@@ -1,7 +1,7 @@
 /* uncomment below to see all the borders */
-* {
+/* * {
 	border: 1px solid red;
-}
+} */
 
 /* defines background color */
 body {
@@ -16,11 +16,11 @@ body {
 html {
 	font-family: 'Reem Kufi Ink', sans-serif;
 	scroll-behavior: smooth;
-	color:#254E58;
+	color:white;
 }
-h1, h2 {
+/* h1, h2 {
 	color: #FBFBF8;
-}
+} */
 
 /* defines the font size for computers */
 @media screen and (min-width: 601px) {
@@ -36,6 +36,7 @@ h1, h2 {
 a {
 	text-decoration: none;
 	font-weight: 500;
+	color: white;
 }
 
 /* underlines hyperlinks */
@@ -48,7 +49,7 @@ a:hover {
 	padding:0;
 	border:0;
 	margin:0;
-	height: 35em;
+	height: 25em;
 	background-image: url(../media/pablotheo-image-header-v2.jpeg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -112,10 +113,59 @@ nav ul li a {
 }
 .middle {
 	position:relative;
-	top: 50%;
+	top: 20%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center;
 	/* offset-x | offset-y | blur-radius | color */
-text-shadow: 1px 1px 2px #254E58;
+	text-shadow: 1px 1px 2px #254E58;
+}
+hr {
+	margin: auto;
+	width: 30%;
+}
+.about-me-div {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 6em;
+}
+.about-me-text {
+	color:black;
+	width: 40em;
+	max-width: 90%;
+	display:inline-block;
+	text-align:left;
+	font-size: 18px;
+}
+.about-me-text a {
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 500;
+	color: #254E58;
+}
+.contact-me {
+	border-radius: 300px;
+	font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #254E58;
+    border-color: #254E58;
+	padding: 21px 34px;
+	display: inline-block;
+    width: auto;
+    height: auto;
+	border-width: 0;
+	text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+	appearance: none;
+    line-height: normal;
+}
+.social-links {
+	text-align: center;
+	background-color: #bac1cb;
+	text-shadow: 1px 1px 2px #254E58;
 }
