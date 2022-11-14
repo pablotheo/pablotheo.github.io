@@ -214,3 +214,8 @@ input[type=text], select, textarea {
 	padding: 20px;
   }
   /* ABOVE IS FOR THE FORM */
+  .about-me-div {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 6em;
+}

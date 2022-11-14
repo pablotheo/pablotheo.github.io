@@ -124,12 +124,24 @@ hr {
 	margin: auto;
 	width: 30%;
 }
-.about-me-div {
+.blog-post {
 	text-align: center;
 	margin-top: 1em;
 	margin-bottom: 6em;
+	/* background-color: aliceblue; */
 }
-.about-me-text {
+.blog-text {
+	border-radius: 15px 75px;
+	border-width: 4px;
+	border-style: solid;
+	/* border-bottom-color: blue;
+	border-left-color: blue;
+	border-right-color: red;
+	border-top-color: red; */
+	border-color: #254E58;
+	padding: 20px; 
+	max-width: 100%;
+	max-height: 100%;
 	color:black;
 	width: 40em;
 	max-width: 90%;
@@ -137,7 +149,17 @@ hr {
 	text-align:left;
 	font-size: 18px;
 }
-.about-me-text a {
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+.blog-text pre, .blog-text p {
+	font-style: italic;
+}
+.blog-text a {
 	font-size: 18px;
 	text-decoration: none;
 	font-weight: 500;
