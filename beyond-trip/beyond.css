@@ -1,0 +1,171 @@
+/* uncomment below to see all the borders */
+/* * {
+	border: 1px solid red;
+} */
+
+/* defines background color */
+body {
+	/* background-color: #FBFBF8; */
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+/* defines the font and scroll behavior */
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&display=swap');
+html {
+	font-family: 'Reem Kufi Ink', sans-serif;
+	scroll-behavior: smooth;
+	color:white;
+}
+/* h1, h2 {
+	color: #FBFBF8;
+} */
+
+/* defines the font size for computers */
+@media screen and (min-width: 601px) {
+
+}
+
+/* defines the font size for phones */
+@media screen and (max-width: 600px) {
+
+}
+
+/* changes hyperlinks */
+a {
+	text-decoration: none;
+	font-weight: 500;
+	color: white;
+}
+
+/* underlines hyperlinks */
+a:hover {
+	text-decoration: underline;
+	font-style: bold;
+}
+
+.header {
+	padding:0;
+	border:0;
+	margin:0;
+	height: 25em;
+	background-image: url(beyond-gif.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: right bottom;
+}
+/* defines box area for navbar at the top*/
+.navbar {
+	margin-left:auto;
+	margin-right:auto;
+	border: auto;
+	width: 95%;
+	max-width: 100%;
+	display: flex;
+	justify-content: end;
+}
+
+/* defines box area for navbar at the bottom*/
+.navbar-bottom {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 5px;
+}
+
+/* defines border for header/navbar */
+/* header {
+	/* background-color: #FBFBF8; */
+	/* border-bottom: 3px solid #6E6658; */
+	/* position: fixed;
+	width: 100%;
+} */
+
+/* makes sure that navbar does not disappear */
+.header::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style: none;
+}
+
+/* makes navbar list a block */
+nav li {
+	display: inline-block;
+	margin: 12px;
+}
+
+/* sets colors for navbar links and makes them uppercase */
+nav ul li a {
+	line-height: normal;
+	color: #254E58;
+	text-decoration: none;
+	text-transform: none;
+	font-weight: bold;
+}
+.middle {
+	position:relative;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	/* offset-x | offset-y | blur-radius | color */
+	text-shadow: 1px 1px 2px #254E58;
+}
+hr {
+	margin: auto;
+	width: 30%;
+}
+.about-me-div {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 6em;
+}
+.about-me-text {
+	color:black;
+	width: 40em;
+	max-width: 90%;
+	display:inline-block;
+	text-align:left;
+	font-size: 18px;
+}
+.about-me-text a {
+	font-size: 18px;
+	text-decoration: none;
+	font-weight: 500;
+	color: #254E58;
+}
+.contact-me {
+	border-radius: 300px;
+	font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    background-color: #254E58;
+    border-color: #254E58;
+	padding: 21px 34px;
+	display: inline-block;
+    width: auto;
+    height: auto;
+	border-width: 0;
+	text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+	appearance: none;
+    line-height: normal;
+}
+.social-links {
+	text-align: center;
+	background-color: #bac1cb;
+	text-shadow: 1px 1px 2px #254E58;
+}
