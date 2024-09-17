@@ -11,10 +11,10 @@ html {
 /* defines box area for navbar at the top*/
 .navbar-top {
 	margin-left: auto;
-	padding-left: 5%;
+	padding-right: 5%;
 	width: 100%;
 	display: flex;
-	justify-content: left;
+	justify-content: right;
 	border-bottom: 1px solid black;
 }
 /* defines border for header/navbar */
@@ -49,6 +49,7 @@ nav li {
 nav ul li a {
 	text-decoration: none;
 	text-transform: none;
+	cursor:pointer;
 }
 
 
