@@ -61,13 +61,20 @@ body {
 	margin: 0;
 }
 /* Create two equal columns that floats next to each other */
-.column1, .column2, .hidden-column {
+.column-left, .column-right, .hidden-column {
 	float: left;
 	width: 50%;
 	padding: 5px;
 	height: auto;
 	/* Should be removed. Only for demonstration */
 }
+.column-left {
+	text-align: center;
+}
+
+
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -79,7 +86,7 @@ body {
 
 /* defines box that is used to store contact images in */
 .contactimage {
-	margin-left: 0;
+	margin-left: auto;
 	margin-right: auto;
 	width: 150px;
 }
@@ -204,27 +211,22 @@ input[type=text], select, textarea {
 
   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-	.column1, .column2{
+	.column-left, .column-right{
 		width: 100%;
 	}
 	.hidden-column, .hidden-space {
 		display: hidden
 	}
-	.contactimage {
-		margin-left: auto;
-		margin-right: auto;
-		width: 150px;
-	}
 }
 
 @media screen and (min-width: 601px) {
-	div.column1 {
+	div.column-left {
 		position: fixed;
 		top: 0;
 	}
 }
 
 
-#myDIV2 {
+#myDIV2, #column-right-blog {
 	display:none;
 }

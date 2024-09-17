@@ -30,6 +30,18 @@
 			var x = document.getElementById("myDIV2");
 			x.style.display = "block";
 		}
+		function showhome() {
+			var x = document.getElementById("column-right-home");
+			x.style.display = "block";
+			var x = document.getElementById("column-right-blog");
+			x.style.display = "none";
+		}
+		function showblog() {
+			var x = document.getElementById("column-right-home");
+			x.style.display = "none";
+			var x = document.getElementById("column-right-blog");
+			x.style.display = "block";
+		}
 	</script>
 
 </head>
@@ -41,11 +53,11 @@
 			<nav>
 				<ul>
 					<li>
-						<strong><a href="#" style="color:#112D32">Home</a></strong>
+						<button onclick="showhome()" id="js-home" style="color:#112D32">Home</button>
 					</li>
 
 					<li>
-						<strong><a href="#" style="color:#112D32">Blog</a></strong>
+						<button onclick="showblog()" id="js-blog">Blog</button>
 					</li>
 				</ul>
 			</nav>
@@ -54,7 +66,7 @@
 	<!-- Header/Navbar END -->
 	<div class="row">
 		<!-- column 1 -->
-		<div class="column1" id="column1">
+		<div class="column-left" id="column-left">
 			<div class="hidden-space">
 				&nbsp;
 			</div>
@@ -68,7 +80,6 @@
 				<!-- title and subtitle -->
 				<h1>I'm Pablo Theo Meraz</h1>
 				<h3>IT Professional based in San Jose, CA</h3>
-
 				<!-- contact links -->
 				&nbsp;
 				<div class="navbar-bottom">
@@ -102,7 +113,7 @@
 		<!-- hidden column to ensure column 2 stays to the right -->
 		<div class="hidden-column"></div>
 		<!-- column 2 -->
-		<div class="column2" id="column2">
+		<div class="column-right" id="column-right-home">
 			<div class="hidden-space">
 				&nbsp;
 			</div>
@@ -244,6 +255,20 @@ HTML, CSS
 
 
 
+			</div>
+
+		</div>
+		<div class="column-right" id="column-right-blog">
+			<div class="hidden-space">
+				&nbsp;
+			</div>
+			<!-- column content -->
+			<div class="column-content">
+				&nbsp;
+				<h1>Blog</h1>
+				<h2>Today</h2>
+				<p>Test of Blog
+				</p>
 			</div>
 
 		</div>

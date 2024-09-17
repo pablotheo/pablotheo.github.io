@@ -1,0 +1,14 @@
+<div class="column-right" id="column-right-blog">
+	<div class="hidden-space">
+		&nbsp;
+	</div>
+	<!-- column content -->
+	<div class="column-content">
+		&nbsp;
+		<h1>Blog</h1>
+		<h2>Today</h2>
+		<p>Test of Blog
+		</p>
+	</div>
+
+</div>
