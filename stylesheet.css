@@ -11,11 +11,11 @@ html {
 /* ALL HEADER SETTINGS BELOW */
 /* defines box area for navbar at the top*/
 .navbar-top {
-	margin-left: auto;
-	padding-right: 5%;
+	/* margin-left: auto; */
+	padding-left: 5%;
 	width: 100%;
 	display: flex;
-	justify-content: right;
+	justify-content: left;
 	border-bottom: 1px solid black;
 }
 /* defines border for header/navbar */
@@ -24,6 +24,7 @@ header {
 	/* border-bottom: 3px solid #6E6658; */
 	position: fixed;
 	width: 100%;
+	z-index: 999;
 }
 
 /* makes sure that navbar does not disappear */
