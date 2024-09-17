@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-	<title>pablotheo.com</title>
+	<title>Pablo Theo | Web Developer</title>
 	<link rel="shortcut icon" type="image/x-icon" href="/media/favicon.ico">
 	<meta charset="UTF-8" />
 	<meta name="keywords" content="HTML, CSS, JavaScript, Pablo, Theo, Meraz, Pablotheo, Pabstheo">
@@ -18,167 +18,239 @@
 				form.reset();
 			}
 		}
+		function qualifications() {
+			var x = document.getElementById("myDIV");
+			x.style.display = "block";
+			var x = document.getElementById("myDIV2");
+			x.style.display = "none";
+		}
+		function projects() {
+			var x = document.getElementById("myDIV");
+			x.style.display = "none";
+			var x = document.getElementById("myDIV2");
+			x.style.display = "block";
+		}
 	</script>
+
 </head>
 
-<BODY id="home">
+<body id="home">
 	<!-- Header/Navbar Begin -->
 	<header id="myHeader">
 		<div class="navbar-top">
 			<nav>
 				<ul>
-					<li><a href="#home" style="color:#112D32">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#experiences">My Experiences</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li>
+						<strong><a href="#" style="color:#112D32">Home</a></strong>
+					</li>
+
+					<li>
+						<strong><a href="#" style="color:#112D32">Blog</a></strong>
+					</li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<!-- Header/Navbar END -->
-
-
-	<div class="my-section-1">
-		<!-- LANDING PAGE INTRO BEGIN: contactimage, pagecontent-title, pagecontent-subtitle -->
-		<div class="contactimage">
-			<img src="/media/profile-pic.jpg" style="border-radius: 50%" alt="@pabstheo" />
-		</div>
-		<div class="pagecontent-title">
-			<h2>Hello World!</h2>
-			<h1>I'm Pablo Theo Meraz</h1>
-		</div>
-		<div class="pagecontent-subtitle">
-			<h3>IT Professional based in San Jose, CA</h3>
-		</div>
-		<!-- LANDING PAGE INTRO END: contactimage, pagecontent-title, pagecontent-subtitle -->
-	</div>
-
-
-	<!-- ABOUT SECTION BEGIN: pagecontent-about, pagecontent-title, pagecontent-subtitle -->
-	<div class="my-section-2" id="about">
-		<div class="pagecontent-title">
-			<h2 style="color: #FBFBF8">
-				<center>
-					About me:
-				</center>
+	<div class="row">
+		<!-- column 1 -->
+		<div class="column1" id="column1">
+			<div class="hidden-space">
 				&nbsp;
-			</h2>
-			<p>
-				Hi Folks! My name is Theo, and I am an experienced IT Professional and web developer. I am currently
-				employed by University of
-				California: Santa Cruz as an Academic Computing Expert for their IT department. Here, I support the
-				Division of Social
-				Sciences's students, staff, and faculty. My interest in information technology and web development first
-				started in undergrad when I was asked to function
-				as the Web Manager for the Bay Tree Campus Store.
-			</p>
-			&nbsp;
-			<p>
-				While I am not busy with school and work, my hobbies include: motorcycling,
-				snowboarding, and going to concerts with friends. I frequently board at Palisades Tahoe, Mammoth
-				Mountain, and Winter Park Colorado.
-			</p>
-		</div>
-	</div>
-	<!-- ABOUT SECTION END: pagecontent-about, pagecontent-title, pagecontent-subtitle -->
-
-
-
-	<!-- SERVICES SECTION BEGIN: pagecontent-services, pagecontent-title, pagecontent-subtitle -->
-	<div class="my-section-1" id="experiences">
-		<div class="pagecontent-title">
-			<h2>
-				<center>My Experiences:</center>
-				&nbsp;
-
-			</h2>
-			<p><b>
-					Academic Computing Expert - University of California: Santa Cruz
-				</b></p>
-			<p><i>July 2023 - Present</i></p>
-
-			&nbsp;
-			<p><b>
-					Website Manager - Bay Tree Bookstore
-				</b></p>
-			<p><i>September 2021 - July 2023</i></p>
-
-			&nbsp;
-			<p><b>
-					Program Manager - City of Woodland
-				</b></p>
-			<p><i>June 2020 - August 2021</i></p>
-
-			&nbsp;
-			<p><b>
-					Computer Sales Consultant - Bay Tree Bookstore
-				</b></p>
-			<p><i>September 2019 - May 2020</i></p>
-		</div>
-	</div>
-	<!-- SERVICES SECTION END: pagecontent-services, pagecontent-title, pagecontent-subtitle -->
-
-
-	<!-- CONTACT SECTION BEGIN: pagecontent-contact, pagecontent-title, pagecontent-subtitle -->
-	<div class="my-section-2" id="contact">
-		<div class="pagecontent-title">
-			<h2 style="color: #FBFBF8">
-				<center>Contact me:</center>
-				&nbsp;
-
-			</h2>
-			<div class="formcontainer">
-				<form action="https://formspree.io/f/xgeqeqvb" method="POST">
-					<label for="fname">First Name</label>
-					<input type="text" id="fname" name="firstname" placeholder="Your first name..">
-
-					<label for="lname">Last Name</label>
-					<input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-					<label for="email">E-Mail</label>
-					<input type="text" id="email" name="email" placeholder="Your email address..">
-
-					<input name="subject" value="Sent from pablotheo.com via formspree" style="display:none" />
-
-					<label for="subject">Message</label>
-					<textarea id="message" name="message" placeholder="Write something.."
-						style="height:100px"></textarea>
-
-					<input type="text" name="_gotcha" style="display:none" />
-
-					<input type="submit" value="Submit">
-				</form>
 			</div>
+			<div class="column-content">
+				&nbsp;
+				<h2>Hello World...</h2>
+				<!-- contact image -->
+				<div class="contactimage">
+					<img src="/media/profile-pic.jpg" style="border-radius: 50%" alt="@pabstheo" />
+				</div>
+				<!-- title and subtitle -->
+				<h1>I'm Pablo Theo Meraz</h1>
+				<h3>IT Professional based in San Jose, CA</h3>
+
+				<!-- contact links -->
+				&nbsp;
+				<div class="navbar-bottom">
+					<nav>
+						<ul>
+							<li>
+								<a href="tel:530-771-7737"><img src="../media/phone-icon-dark-48.png"
+										alt="Call 530-771-7737"></a>
+							</li>
+							<li>
+								<a href="mailto:pabstheo@icloud.com"><img src="../media/email-icon-dark-48.png"
+										alt="Email pabstheo@icloud.com"></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/pablotheo"><img
+										src="../media/linkedin-icon-dark-48.png" alt="LinkedIn"></a>
+							</li>
+							<li>
+								<a href="https://github.com/pablotheo"><img src="../media/github-icon-dark-48.png"
+										alt="Github"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
 		</div>
+
+		<!-- end of column 1 -->
+
+		<!-- hidden column to ensure column 2 stays to the right -->
+		<div class="hidden-column"></div>
+		<!-- column 2 -->
+		<div class="column2" id="column2">
+			<div class="hidden-space">
+				&nbsp;
+			</div>
+			<!-- column 2 content -->
+			<div class="column-content">
+				&nbsp;
+				<h1>Come learn more about me!</h1>
+				<h2>About</h2>
+				<p>Hi Folks! My name is Theo, and I am an experienced IT Professional and web developer. I am currently
+					employed by University of California: Santa Cruz as an Academic Computing Expert for their IT
+					department. Here, I support the Division of Social Sciences's students, staff, and faculty. My
+					interest in information technology and web development first started in undergrad when I was asked
+					to function as the Web Manager for the Bay Tree Campus Store.
+				</p>
+				<p>While I am not busy with school and work, my hobbies include: motorcycling, snowboarding, and going
+					to concerts with friends. I frequently board at Palisades Tahoe, Mammoth Mountain, and Winter Park
+					Colorado.</p>
+				<h2>Experiences</h2>
+				<!-- js buttons in same paragraph line -->
+				<p>
+					<button onclick="qualifications()" id="js-button">Qualifications</button>
+					<button onclick="projects()" id="js-button2">Projects</button>
+				</p>
+				<!-- job one -->
+				<div id="myDIV">
+					<button>
+						<pre><b>
+Academic Computing Expert - University of California: Santa Cruz</b>
+July 2023 - Present
+						</pre>
+
+					</button>
+					&nbsp;
+					<!-- job two -->
+					<button>
+						<pre><b>
+Website Manager - Bay Tree Bookstore</b>
+September 2021 - July 2023
+							</pre>
+
+					</button>
+					&nbsp;
+					<!-- job three -->
+					<button>
+						<pre><b>
+Program Manager - City of Woodland</b>
+June 2020 - August 2021
+								</pre>
+
+					</button>
+					&nbsp;
+					<!-- job four -->
+					<button>
+						<pre><b>
+Computer Sales Consultant - Bay Tree Bookstore</b>
+September 2019 - May 2020
+									</pre>
+					</button>
+					&nbsp;
+					<!-- end of job section -->
+					<!--  -->
+				</div>
+				<!-- end of myDIV1 -->
+				<!-- start of projects DIV -->
+				<div id="myDIV2">
+					<!-- website one -->
+					<button>
+						<pre><b>
+Personal Website 4.0 (https://pablotheo.com)</b>
+HTML, CSS, JS, FormSpree API			
+</pre>
+					</button>
+					&nbsp;
+					<!-- wordpress faculty website  -->
+					<a href="https://pablotheo.sites.ucsc.edu/"><button>
+							<pre><b>
+Demo Wordpress Site (https://pablotheo.sites.ucsc.edu/)</b>
+Wordpress, HTML, CSS, JS		
+</pre>
+						</button></a>
+					&nbsp;
+					<!-- wordpress faculty website  -->
+					<button>
+						<pre><b>
+*Placeholder* UCSC Faculty Website (Wordpress)</b>
+Wordpress, HTML, CSS, JS				
+					</pre>
+					</button>
+					&nbsp;
+					<!-- wordpress faculty website  -->
+					<button>
+						<pre><b>
+*Placeholder* UCSC Faculty Website (Wordpress)</b>
+Wordpress, HTML, CSS, JS				
+</pre>
+					</button>
+					&nbsp;
+					<!-- website  -->
+					<a href="https://github.com/pablotheo/pablotheo-website-v3"><button>
+							<pre><b>
+Personal Website 3.0 (Github)</b>
+HTML, CSS, JS, FormSpree API		
+</pre>
+						</button></a>
+					&nbsp;
+					<!-- website  -->
+					<a href="https://github.com/pablotheo/pablotheo-website-v2"><button>
+							<pre><b>
+Personal Website 2.0 (Github)</b>
+HTML, CSS			
+</pre>
+						</button></a>
+					&nbsp;
+				</div>
+				<h2>Contact</h2>
+				<div class="formcontainer">
+					<form action="https://formspree.io/f/xgeqeqvb" method="POST">
+						<label for="fname">Name</label>
+						<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+						<!-- <label for="lname">Last Name</label>
+						<input type="text" id="lname" name="lastname" placeholder="Your last name.."> -->
+
+						<label for="email">E-Mail</label>
+						<input type="text" id="email" name="email" placeholder="Your email address..">
+
+						<input name="subject" value="Sent from pablotheo.com via formspree" style="display:none" />
+
+						<label for="subject">Message</label>
+						<textarea id="message" name="message" placeholder="Write something.."
+							style="height:100px"></textarea>
+
+						<input type="text" name="_gotcha" style="display:none" />
+
+						<input type="submit" value="Submit">
+					</form>
+				</div>
+
+
+
+
+			</div>
+
+		</div>
+
+
 	</div>
-	<!-- CONTACT SECTION END: pagecontent-contact, pagecontent-title, pagecontent-subtitle -->
 
-	<!-- FOOTER BEGIN -->
-	<footer>
-		<div class="navbar-bottom">
-			<nav>
-				<ul>
-					<li>
-						<a href="tel:530-771-7737"><img src="../media/phone-icon-dark-48.png"
-								alt="Call 530-771-7737"></a>
-					</li>
-					<li>
-						<a href="mailto:pabstheo@icloud.com"><img src="../media/email-icon-dark-48.png"
-								alt="Email pabstheo@icloud.com"></a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/pablo-m-421723119"><img
-								src="../media/linkedin-icon-dark-48.png" alt="LinkedIn"></a>
-					</li>
-					<li>
-						<a href="https://github.com/pablotheo"><img src="../media/github-icon-dark-48.png"
-								alt="Github"></a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</footer>
-
-	<!-- I wrote this webpage on VSCode.Dev. The domain was purchased from Google, and I host the files via a GitHub repository. Editing is done via a cloned version on VS Code and changes are pushed directly to GitHub-->
+</body>
 
 </html>
