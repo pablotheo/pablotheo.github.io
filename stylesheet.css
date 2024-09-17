@@ -114,6 +114,8 @@ body {
 }
 pre {
     white-space: pre-wrap;
+	text-decoration: none;
+	text-transform: none;
 }
 
 
