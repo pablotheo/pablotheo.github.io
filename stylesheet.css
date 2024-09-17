@@ -47,7 +47,6 @@ nav li {
 }
 /* makes navbar uppercase */
 nav ul li a {
-	/* color: #254E58; */
 	text-decoration: none;
 	text-transform: none;
 }
