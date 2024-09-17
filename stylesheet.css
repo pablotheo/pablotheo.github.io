@@ -7,6 +7,15 @@ html {
 	scroll-behavior: smooth;
 	background-color: #FBFBF8;
 }
+.yatra-one-regular {
+  font-family: "Yatra One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+html, button, pre {
+    font-family: "Yatra One", sans-serif;
+}
 
 /* ALL HEADER SETTINGS BELOW */
 /* defines box area for navbar at the top*/
