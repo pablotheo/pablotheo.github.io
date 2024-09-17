@@ -13,11 +13,13 @@
 	<link rel="stylesheet" href="stylesheet.css">
 
 	<script>
+		// clear form upon reload or submission
 		window.onbeforeunload = () => {
 			for (const form of document.getElementsByTagName('form')) {
 				form.reset();
 			}
 		}
+		// show or hide qualifications and projects
 		function qualifications() {
 			var x = document.getElementById("myDIV");
 			x.style.display = "block";
@@ -30,6 +32,7 @@
 			var x = document.getElementById("myDIV2");
 			x.style.display = "block";
 		}
+		// show or hide blog and home
 		function showhome() {
 			var x = document.getElementById("column-right-home");
 			x.style.display = "block";
@@ -42,6 +45,7 @@
 			var x = document.getElementById("column-right-blog");
 			x.style.display = "block";
 		}
+		// show or hide descriptions for jobs and projects
 	</script>
 
 </head>
@@ -79,8 +83,7 @@
 				</div>
 				<!-- title and subtitle -->
 				<h1>I'm Pablo Theo Meraz</h1>
-
-				<h3>IT Professional based in San Jose, CA</h3>
+				<h3>Web Developer based out of San Jose, California</h3>
 				<!-- contact links -->
 				&nbsp;
 				<div class="navbar-bottom">
@@ -121,50 +124,142 @@
 			<!-- column 2 content -->
 			<div class="column-content">
 				&nbsp;
-				<h1>Come learn more about me!</h1>
 				<h2>About</h2>
 				<p>Hi Folks! My name is Theo, and I am an experienced IT Professional and web developer. I am currently
-					employed by University of California: Santa Cruz as an Academic Computing Expert for their IT
-					department. Here, I support the Division of Social Sciences's students, staff, and faculty. My
-					interest in information technology and web development first started in undergrad when I was asked
-					to function as the Web Manager for the Bay Tree Campus Store.
+					employed by ITS at the University of California: Santa Cruz. Here, I support the Division of Social
+					Sciences's students, staff, and faculty.
 				</p>
-				<p>While I am not busy with school and work, my hobbies include: motorcycling, snowboarding, and going
+				<p>In my spare time, my hobbies include: motorcycling, snowboarding, and going
 					to concerts with friends. I frequently board at Palisades Tahoe, Mammoth Mountain, and Winter Park
 					Colorado.</p>
 				<h2>Experiences</h2>
 				<!-- js buttons in same paragraph line -->
 				<p>
-					<button onclick="qualifications()" id="js-button">Qualifications</button>
-					<button onclick="projects()" id="js-button2">Projects</button>
+					<button onclick="qualifications()" class="experiences" id="js-button">Qualifications</button>
+					<button onclick="projects()" class="experiences" id="js-button2">Projects</button>
 				</p>
 				<!-- job one -->
 				<div id="myDIV">
-					<button>
+
+					<button class="collapsible">
 						<pre><b>Academic Computing Expert - University of California: Santa Cruz</b>
 July 2023 - Present</pre>
 
 					</button>
+					<div class="content">
+						<ul>
+							<li>
+								Support the research done by UCSC's Social Science Division by providing the highest
+								quality IT support.
+							</li>
+							<li>
+								Build various Wordpress Sites using Campus Press Theme in order to contribute to UCSC's
+								migration from WCMS to Wordpress. Ensure sites are built in line with UCSC's brand and
+								accessibility standards. Track progress of website completions within Asana.
+							</li>
+							<li>
+								Manage ticket queue by utilizing Service Now ticketing system to keep track of ongoing
+								tasks and coordinate with team members to complete tasks in a timely manner. Resolve
+								technical issues for clients via Zoom, Teamviewer, and Phone.
+							</li>
+							<li>
+								Create and modify existing documentation for members of my team to keep our knowledge
+								base up to date and ensure processes are done correctly.
+							</li>
+							<li>
+								Oversee the deployment and continual support of client devices via enrollment in Jamf
+								Pro and BigFix SSA.
+							</li>
+							<li>
+								Provide ongoing hardware support for various devices on campus. As a certified Apple
+								Repair Technician, diagnose and repair Apple Macbooks, iMacs, and Mac Minis. Manage,
+								service, and repair Xerox Printers & Scanners.
+							</li>
+							<li>
+								Support and update campus DTEN units, utilizing role as an Administrator for Zoom.
+							</li>
+						</ul>
+					</div>
+
 					&nbsp;
 					<!-- job two -->
-					<button>
+					<button class="collapsible">
 						<pre><b>Website Manager - Bay Tree Bookstore</b>
 September 2021 - July 2023</pre>
-
 					</button>
+					<div class="content">
+						<ul>
+							<li>
+								Collarborated with the Store Director in order to oversee Bay Tree's transition from
+								Sequoia ePOS to Oracle NetSuite. Bridged legacy backend inventory management system
+								during transition in order to ensure ease of transition. As the store's NetSuite
+								Administrator, I updated product offerings on the webstore.
+							</li>
+							<li>
+								Utilized my knowledge of HTML, CSS, and Javascript to regularly maintain and update the
+								website, including customizing banners and images, organizing subpages, and performing
+								general cosmetic changes.
+							</li>
+							<li>
+								Imaged computers for Bay Tree's staff members with UCSC's Standard Desktop Services
+								applications such as BigFIx and Jamf.
+							</li>
+							<li>
+								Oversaw procurement and created purchase orders specifically for Apple products,
+								managing inventory and vendor relationships to support store operations.
+							</li>
+							<li>
+								Kept an accurate inventory of all Apple products as well as general knowledge of their
+								margin costs.
+								Coordinated bulk sales to UCSC ITS that exceeded $100,000. Maintained connections with
+								UCSC Faculty and Staff in order to utilize university funding for purchases.
+							</li>
+							<li>
+								Performed daily sales duties such as: operating cash register, stocked items, provided
+								information about new sales and promotions, and responded to email/phone inquiries.
+							</li>
+						</ul>
+					</div>
 					&nbsp;
 					<!-- job three -->
-					<button>
+					<button class="collapsible">
 						<pre><b>Program Manager - City of Woodland</b>
 June 2020 - August 2021</pre>
-
 					</button>
+					<div class="content">
+						<ul>
+							<li>
+								Managed the City of Woodland's Summer Time Fun Club during COVID-19, supervising 36
+								children, delegating roles to 4 part-time staff, ensuring compliance with health
+								protocols, assisting with technical issues, learning problems, and homework, and
+								providing a safe environment for K-8 students during school closures.
+							</li>
+						</ul>
+					</div>
 					&nbsp;
 					<!-- job four -->
-					<button>
+					<button class="collapsible">
 						<pre><b>Computer Sales Consultant - Bay Tree Bookstore</b>
 September 2019 - May 2020</pre>
 					</button>
+					<div class="content">
+						<ul>
+							<li>
+								Performed various roles including operating a cash register, customer communication,
+								receiving packages for the Technology Department, handling payment transactions,
+								processing online orders, restocking sales floors, organizing and pricing merchandise,
+								and responding to customer inquiries via telephone and email.
+							</li>
+							<li>
+								Cross-trained across multiple departments, including Shipping & Receiving, Cashier, and
+								Bay Tree Express Store.
+							</li>
+							<li>
+								Oversaw the training of new hires in the Technology Department and conducted weekly
+								inventory counts of Apple products.
+							</li>
+						</ul>
+					</div>
 					&nbsp;
 					<!-- end of job section -->
 					<!--  -->
@@ -173,38 +268,44 @@ September 2019 - May 2020</pre>
 				<!-- start of projects DIV -->
 				<div id="myDIV2">
 					<!-- website one -->
-					<button>
+					<button class="project">
 						<pre><b>Personal Website 4.0 (https://pablotheo.com)</b>
 HTML, CSS, JS, FormSpree API</pre>
 					</button>
 					&nbsp;
+					<!-- slugstore -->
+					<a href="https://slugstore.ucsc.edu"><button class="project">
+							<pre><b>Bay Tree Bookstore (https://slugstore.ucsc.edu)</b>
+Oracle Netsuite CMS, HTML, CSS</pre>
+						</button></a>
+					&nbsp;
 					<!-- wordpress faculty website  -->
-					<a href="https://pablotheo.sites.ucsc.edu/"><button>
-							<pre><b>Demo Wordpress Site (https://pablotheo.sites.ucsc.edu/)</b>
+					<a href="https://pablotheo.sites.ucsc.edu/"><button class="project">
+							<pre><b>Demo UCSC Wordpress Site (https://pablotheo.sites.ucsc.edu/)</b>
 Wordpress, HTML, CSS, JS</pre>
 						</button></a>
 					&nbsp;
 					<!-- wordpress faculty website  -->
-					<button>
-						<pre><b>*Placeholder* UCSC Faculty Website (Wordpress)</b>
+					<a href="https://costa.eeb.ucsc.edu/"><button class="project">
+							<pre><b>Costa Lab UCSC Faculty Website (https://costa.eeb.ucsc.edu/)</b>
 Wordpress, HTML, CSS, JS</pre>
-					</button>
+						</button></a>
 					&nbsp;
 					<!-- wordpress faculty website  -->
-					<button>
-						<pre><b>*Placeholder* UCSC Faculty Website (Wordpress)</b>
+					<a href="https://zhanglab.sites.ucsc.edu/"><button class="project">
+							<pre><b>Zhang Lab UCSC Faculty Website (https://zhanglab.sites.ucsc.edu/)</b>
 Wordpress, HTML, CSS, JS</pre>
-					</button>
+						</button></a>
 					&nbsp;
 					<!-- website  -->
-					<a href="https://github.com/pablotheo/pablotheo-website-v3"><button>
-							<pre><b>Personal Website 3.0 (Github)</b>
+					<a href="https://github.com/pablotheo/pablotheo-website-v3"><button class="project">
+							<pre><b>Personal Website 3.0 (Github Repository)</b>
 HTML, CSS, JS, FormSpree API</pre>
 						</button></a>
 					&nbsp;
 					<!-- website  -->
-					<a href="https://github.com/pablotheo/pablotheo-website-v2"><button>
-							<pre><b>Personal Website 2.0 (Github)</b>
+					<a href="https://github.com/pablotheo/pablotheo-website-v2"><button class="project">
+							<pre><b>Personal Website 2.0 (Github Repository)</b>
 HTML, CSS</pre>
 						</button></a>
 					&nbsp;
@@ -246,17 +347,50 @@ HTML, CSS</pre>
 			<!-- column content -->
 			<div class="column-content">
 				&nbsp;
-				<h1>Blog</h1>
-				<h2>Today</h2>
-				<p>Test of Blog
-				</p>
+				<h2>September 16th, 2024</h2>
+				<h3>Rebuilding My Website</h3>
+				<p>Dear Reader,</p>
+				<p>Today was an exciting day—I finally took the time to recode my website from scratch! Instead of
+					relying on pre-built templates or frameworks, I challenged myself by using my own custom HTML, CSS,
+					and JavaScript. It was a rewarding experience, allowing me to have complete control over the design
+					and functionality. I'm using Formspree's API for my contact form, which makes managing messages and
+					inquiries much easier without needing to set up a backend server. The website is hosted on GitHub,
+					which keeps it accessible, reliable, and version-controlled. It's always satisfying to see a project
+					come together smoothly, and this time was no exception.</p>
+				<p>Now that the site is live and running, I’m planning to expand my skills by diving deeper into
+					frameworks like React. I've been curious about how frameworks can speed up development and enhance
+					the user experience, so this feels like the perfect next step. Along with React, I’m exploring other
+					modern tools and libraries that could take my coding abilities to the next level.</p>
+				<p>On a different note, I’m excited for the upcoming fall season. As the weather starts to cool down,
+					I'm getting ready for one of my favorite activities—snowboarding! I can't wait to hit the slopes
+					again. It's always a refreshing way to unwind and reset during the colder months.
+
+					This fall, I’m balancing my passion for learning new tech with my love for the outdoors, and I
+					couldn’t be more excited for what’s ahead. Stay tuned for updates on my journey with React and my
+					winter adventures on the mountain!</p>
+
 			</div>
 
 		</div>
 
 
 	</div>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
 
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
 </body>
 
 </html>

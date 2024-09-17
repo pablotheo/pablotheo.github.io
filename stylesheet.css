@@ -5,6 +5,7 @@
 /* makes scroll behavior smooth */
 html {
 	scroll-behavior: smooth;
+	background-color: #FBFBF8;
 }
 
 /* ALL HEADER SETTINGS BELOW */
@@ -51,7 +52,6 @@ nav ul li a {
 	text-transform: none;
 	cursor:pointer;
 }
-
 
 
 /* gets rid of annoying margins */
@@ -112,6 +112,13 @@ body {
 	justify-content: center;
 	padding-top: 5px;
 }
+.navbar-bottom nav ul li a img {
+	height: 35px;
+}
+
+
+
+
 pre {
     white-space: pre-wrap;
 	text-decoration: none;
@@ -133,10 +140,10 @@ pre {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	/* font-size: 16px; */
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 80px;
+	border: 1px solid black;
   }
 
 
@@ -148,10 +155,11 @@ pre {
 	text-align: left;
 	text-decoration: none;
 	display: inline-block;
-	/* font-size: 16px; */
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 80px;
+	border: 1px solid black;
+	/* background-color: grey; */
 }
 #myDIV2 button {
 	width: 100%;
@@ -160,10 +168,10 @@ pre {
 	text-align: left;
 	text-decoration: none;
 	display: inline-block;
-	/* font-size: 16px; */
 	margin: 4px 2px;
 	cursor: pointer;
 	border-radius: 80px;
+	border: 1px solid black;
 }
 
 
@@ -177,7 +185,7 @@ pre {
 input[type=text], select, textarea {
 	width: 100%;
 	padding: 12px;
-	border: 1px solid #6E6658;
+	border: 1px solid black;
 	border-radius: 4px;
 	box-sizing: border-box;
 	margin-top: 6px;
@@ -186,27 +194,49 @@ input[type=text], select, textarea {
   }
   
   input[type=submit] {
-	background-color: #254E58;
-	color: white;
+	/* background-color: tan; */
+	/* color: white; */
 	padding: 12px 20px;
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
+	border: 1px solid black;
   }
   
   input[type=submit]:hover {
-	background-color: navy;
+	background-color: #254E58;
+	color: white;
   }
   
   .formcontainer {
 	border-radius: 5px;
-	background-color: #FBFBF8;
+	/* background-color: #FBFBF8; */
 	padding: 20px;
   }
   /* ABOVE IS FOR THE FORM */
 
 
 
+
+
+.active, .experiences:hover, .collapsible:hover, .project:hover {
+  background-color: #254E58;
+}
+.experiences:hover, .collapsible:hover, .project:hover {
+	color: white;
+}
+.active {
+	color: white;
+} 
+
+
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease-out;
+}
 
 
 
